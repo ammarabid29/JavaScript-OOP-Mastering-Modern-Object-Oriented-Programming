@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // let person = new Object();  //Object Constructor
+        // let person = {};         //Object Literal
+
+        // creating a object with properties with "key: value" pairs
+        let car = {
+            brand: "Toyota",   // key=brand and value="Toyota"
+            model: "Camry",
+            year: 2023,
+            isSedan: true,
+        };
+        // car.isSedan = true;
+
+        // get property values of Object
+        // alert(car.brand);
+        // alert(car.model);
+        // alert(car.year);
+        // alert(car.isSedan);
+
+        // delete car.year;
+        // alert(car.year);
+
+        // car["is auto"] = true;
+        // alert(car["is auto"]);
+
+        // let key="is auto";
+        // car[key]=true;
+
+        // let key = prompt("What do you want to know about the car?","");
+        // alert(car[key]);
+
+        let selectedFood = prompt("Which fruit do you want to buy?", "banana");
+        let groceryBag = {
+            // [selectedFood]: 12,
+            [selectedFood + "Milkshake"]: 3,
+        };
+        // groceryBag[selectedFood] = 3; ///same as above
+        // alert(groceryBag[selectedFood]);
+        alert(groceryBag.bananaMilkshake);
+
+
+
+
+    </script>
+</body>
+
+</html>
