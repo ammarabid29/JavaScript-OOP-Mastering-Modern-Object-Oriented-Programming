@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        "use strict"
+        // What is the result of accessing 'user.ref.name' in the following code ? Explain your answer.
+        //     P.S.Use 'use strict' on top of your script before you run this code or one might not be able to see the issue generated while it.
+
+        function makeUser() {
+            return {
+                name: "Ismail",
+                ref(){
+                    return this;
+                }
+            };
+        }
+        let user = makeUser();
+        alert(user.ref().name);
+    </script>
+</body>
+
+</html>

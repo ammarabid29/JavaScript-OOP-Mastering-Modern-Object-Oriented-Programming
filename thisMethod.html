@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // let userDetails={
+        //     name:"Ammar",
+        //     age:22,
+        //     sayHi(){
+        //         alert(this.name);
+        //     }
+        // }
+        // userDetails.sayHi();
+
+        // let userDetails = { name: "Ammar" };
+        // let adminDetails = { name: "Abid" };
+        // function sayHi() {
+        //     alert(this.name);
+        // }
+        // userDetails.func = sayHi;
+        // adminDetails.func = sayHi;
+        // userDetails.func();
+        // adminDetails.func();
+        // or
+        // adminDetails["func"];
+
+        let userDetails = {
+            name: "Ammar",
+            sayHi() {
+                let arrow = () => alert(this.name);
+                arrow();
+            }
+        }
+        userDetails.sayHi();
+
+
+
+    </script>
+</body>
+
+</html>
