@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        // let userDetails = {
+        //     name: "Ammar",
+        //     age: 22,
+        //     isAdmin: true,
+        // }
+        // for (let property in userDetails) {
+        //     alert(property);
+        //     alert(userDetails[property]);
+        // }
+
+        // let postalCodes = {
+        //     "+78": "Ammar",
+        //     "+71": "Abid",
+        //     "+72": "Ali",
+        //     "+7": "Haider",
+        // };
+        // show code in assending sorted order that's why add + before integer
+        // for (let code in postalCodes) {
+        //     alert(code);
+        // alert(postalCodes[code]);
+        // }
+
+        // Number() convert to number
+        // Math.trunc remove decimal part  
+        // alert(String(Math.trunc(Number("79"))));
+        // alert(String(Math.trunc(Number("+79"))));
+        // alert(String(Math.trunc(Number("1.2"))));
+
+        // let user = {};
+        // user.name = "John";
+        // user.surName = "Smith";
+        // alert(user.name);
+        // user.name = "Pete";
+        // alert(user.name);
+        // delete(user.name);
+        // alert(user.name);
+
+        // let schedule = {};
+        // function isObjEmpty(obj) {
+        //     return Object.keys(obj).length === 0;
+        // }
+        // alert(isObjEmpty(schedule)); // true
+        // schedule["8:30"] = "wake up";
+        // alert(isObjEmpty(schedule)); // false"
+
+
+        // let teamSalaries = {
+        //     Ahmed: 120,
+        //     Basit: 160,
+        //     Ismail: 130,
+        // };
+        // let totalSalary = 0;
+        // for (let salaries in teamSalaries) {
+        //     totalSalary = totalSalary + teamSalaries[salaries];
+        // }
+        // alert(totalSalary);
+
+
+
+        function doubleNumericValues(obj) {
+            for (let values in obj) {
+                if (typeof (obj[values]) == "number") {
+                    obj[values] *= 2;
+                }
+            }
+        }
+        let dimensions = {
+            width: 200,
+            height: 300,
+            label: "My dimensions",
+        };
+        doubleNumericValues(dimensions);
+        console.log(dimensions);
+
+
+    </script>
+
+</body>
+
+</html>
