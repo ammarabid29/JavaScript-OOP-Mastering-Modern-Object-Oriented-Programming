@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function userDetails(name) {
+            this.name = name;
+            this.sayHi = function () {
+                alert("Hello! " + this.name);
+            }
+        }
+        let ammar = new userDetails("Ammar");
+        alert(ammar.name);
+        ammar.sayHi();
+    </script>
+</body>
+
+</html>
