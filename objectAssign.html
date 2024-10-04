@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // let currentUser = { name: "Ammar" };
+        // let permission1 = { canView: true };
+        // let permission2 = { canEdit: true };
+        // Object.assign(currentUser, permission1, permission2);
+        // console.log(currentUser);
+
+        // let userDetails = { name: "Ammar", age: 22, };
+        // let duplicateUser = Object.assign({}, userDetails);
+        // alert(duplicateUser.name);
+        // alert(duplicateUser.age);
+
+        // let userDetails = {
+        //     name: "Ammar",
+        //     dimensions: {
+        //         userHeight: 182,
+        //         userWidth: 50,
+        //     }
+        // }
+        // // alert(userDetails.dimensions.userHeight);
+        // // alert(userDetails.dimensions.userWidth);
+        // let cloneDetails = Object.assign({}, userDetails);
+        // alert(userDetails.dimensions === cloneDetails.dimensions); // true
+        // userDetails.dimensions.userWidth = 60;
+        // alert(cloneDetails.dimensions.userWidth);
+
+
+        // structuredClone() 
+        let userDetails = {
+            name: "Ammar",
+            dimensions: {
+                userHeight: 182,
+                userWidth: 50,
+            }
+        }
+        let cloneDetails = structuredClone(userDetails);
+        alert(userDetails.dimensions === cloneDetails.dimensions); // false, because two different objects
+        cloneDetails.dimensions.userWidth = 60;
+        alert(userDetails.dimensions.userWidth);
+
+        userDetails.me = userDetails;
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
