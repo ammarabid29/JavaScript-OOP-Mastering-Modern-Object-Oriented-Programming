@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        // alert(obj);
+        // another[obj] = 123; // using object as property key
+
+        // let num = Number(obj);
+        // let n = +obj;
+        // let delta = date1 - date2;
+        // let greater = user1 > user2;
+
+        // obj[Symbol.toPrimitive]=function(hint){
+        //     // here goes code to convert object to primitive 
+        //     // it return a primitive value
+        //     // hint = one of string, number or default
+        // }
+
+        let userDetails = {
+            name: "Ammar",
+            money: 1000,
+            [Symbol.toPrimitive](hint) {
+                alert(`hint: ${hint}`);
+                return hint == "string" ? `{name:"${this.name}"}` : this.money;
+            }
+        }
+        alert(userDetails);
+        alert(+userDetails);
+        alert(userDetails + 500);
+
+    </script>
+</body>
+
+</html>

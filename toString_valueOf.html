@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        // let userDetails = {
+        //     name: "Ammar",
+        // };
+        // alert(userDetails);  // [object Object]
+        // alert(userDetails.valueOf() == userDetails);  // true
+
+        // let userDetails = {
+        //     name: "Ammar",
+        //     money: 1000,
+        //     // for hint = string 
+        //     toString() {
+        //         return `{name ${this.name}}`;
+        //     },
+        //     // for hint = "number" or "default"
+        //     valueOf() {
+        //         return this.money;
+        //     },
+        // };
+        // alert(userDetails);     // toString -> {name: Ammar}
+        // alert(+userDetails);    // valueOf -> 1000
+        // alert(userDetails + 500);
+
+        let userDetails = {
+            name: "Ammar",
+            toString() {
+                return this.name;
+            }
+        };
+        alert(userDetails);
+        alert(userDetails + 500); 
+
+
+    </script>
+</body>
+
+</html>
