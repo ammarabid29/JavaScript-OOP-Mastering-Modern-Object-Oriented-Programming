@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        // let id1 = Symbol("id");
+        // let id2 = Symbol("id");
+        // alert(id1 == id2); // false
+
+        // let id=Symbol("id");
+        // alert(id); // typeError, can't convert a Symbol to string
+
+        // let id = Symbol("id");
+        // alert(id.toString());
+        // alert(id.description);
+
+        // let userDetails = {
+        //     name: "Ammar",
+        // };
+        // let id = Symbol("id");
+        // userDetails[id] = 1;
+        // alert(userDetails[id]);
+
+        // let userDetails={
+        //     name:"Ammar",
+        // };
+        // userDetails.id="Our id value";
+        // userDetails.id="Their id value";
+        // alert(userDetails.id);
+
+        // let id = Symbol("id");
+        // let userDetails = {
+        //     name: "Ammar Abid",
+        //     age: 22,
+        //     [id]: 123,
+        // };
+        // for (let key in userDetails) alert(userDetails[key]);
+        // alert("Direct: " + userDetails[id]);
+
+        // let id = Symbol("id");
+        // let userDetails = {
+        //     [id]: 123,
+        // };
+        // let clone = Object.assign({}, userDetails);
+        // alert(clone[id]);
+
+        // Global symbol
+        // let id = Symbol.for("id");
+        // let idAgain = Symbol.for("id");
+        // alert(id === idAgain);
+
+        // only accessible for global symbol 
+        // let sym1 = Symbol.for("name");
+        // let sym2 = Symbol.for("id");
+        // alert(Symbol.keyFor(sym1));
+        // alert(Symbol.keyFor(sym2));
+
+        // let globalSymbol = Symbol.for("name");
+        // let localSymbol = Symbol("name");
+        // alert(Symbol.keyFor(globalSymbol));  // name
+        // alert(Symbol.keyFor(localSymbol));  // undefined
+        // alert(localSymbol.description);
+
+    </script>
+</body>
+
+</html>
